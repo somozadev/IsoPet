@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2193094265101582683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2193094265101582681}
+  - component: {fileID: 2193094265101582680}
+  m_Layer: 0
+  m_Name: SHOP_LOGIC
+  m_TagString: SHOP_LOGIC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2193094265101582681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193094265101582683}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2193094265101582680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193094265101582683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ddd9605191d1144daf8c9cf6ff8a5a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalDays: 0
+  playerEconomy: 15000
+  economyUI: {fileID: 0}
+  economyUiIcon: {fileID: 0}
+  economy: {fileID: 0}
+  economyBackground: {fileID: 0}
+  roomsLogic: {fileID: 0}
+  shopBackground: {fileID: 0}
+  parentCanvas: {fileID: 0}
+  nameSetPrefab: {fileID: 8083562927940771621, guid: 8240fcca72073044481fdf4b4afb6596, type: 3}
+  shopItemPrefab: {fileID: 2051517790143180646, guid: 1431ee28e6a1be943a27d817c6daf726, type: 3}
+  shopItemPrefabPARENT: {fileID: 0}
+  startNameSetPrefab: {fileID: 880459407177500564, guid: ead10cc877951bc4283e0a68059086f4, type: 3}
+  iconsShop:
+    itemsRarity:
+    - rarity: 0
+      icon: {fileID: 21300000, guid: f709fe115ed462544a0cacd8f7cccbc2, type: 3}
+      prefab: {fileID: 1206511787925574, guid: 3b1e3e9155d404942bc65d9aa80120ba, type: 3}
+      price: 500
+      bordersShop: {fileID: 21300000, guid: b34676820f6fb8a4f9005be0ea585334, type: 3}
+    - rarity: 0
+      icon: {fileID: 21300000, guid: 09cae86b4fb32864288563cb2c572aad, type: 3}
+      prefab: {fileID: 1287295899898638, guid: 9ec060093457ad84ca2733cb15c2c41e, type: 3}
+      price: 500
+      bordersShop: {fileID: 21300000, guid: b34676820f6fb8a4f9005be0ea585334, type: 3}
+    - rarity: 0
+      icon: {fileID: 21300000, guid: 6ecea548a1f02264284855f825e033c3, type: 3}
+      prefab: {fileID: 1522729216997060, guid: 32026357c04e0e944835774b42e3c1b7, type: 3}
+      price: 500
+      bordersShop: {fileID: 21300000, guid: b34676820f6fb8a4f9005be0ea585334, type: 3}
+    - rarity: 0
+      icon: {fileID: 21300000, guid: 2862d5f9cac1beb41b471d8450a66f5c, type: 3}
+      prefab: {fileID: 1055064919166404, guid: de6abd774f85e18408346a3233418242, type: 3}
+      price: 500
+      bordersShop: {fileID: 21300000, guid: b34676820f6fb8a4f9005be0ea585334, type: 3}
+    - rarity: 0
+      icon: {fileID: 21300000, guid: 7ff1315611559fe4d971ba5a00d77123, type: 3}
+      prefab: {fileID: 1965851562501010, guid: e82139b3bae6212439ea1e85ad29678b, type: 3}
+      price: 500
+      bordersShop: {fileID: 21300000, guid: b34676820f6fb8a4f9005be0ea585334, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: a55c01e4531a1834a83f983f1cf770df, type: 3}
+      prefab: {fileID: 100000, guid: 6e616e7bf46c26748a153fac2d7b1293, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: 2f2d05ee45aece247b0ebf823927ead6, type: 3}
+      prefab: {fileID: 100000, guid: 1168e432e0c205345b90c4ec2f307c97, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: 9bbfe1aad1b31fd449e579ffa5378ca3, type: 3}
+      prefab: {fileID: 100000, guid: 2d434559430d5e54183217ebf67f2bba, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: c069ff38509d4f04cbd006260d221db6, type: 3}
+      prefab: {fileID: 100000, guid: 108b1dfb3718d604e9452dfa37a30cdc, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: 666ed7b2a9380fd478dd53a64fe59dde, type: 3}
+      prefab: {fileID: 100000, guid: a7dfc8f0b06a1f64a889c6c9e36e23d5, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: cbee8feedde72cf479bf895898f61350, type: 3}
+      prefab: {fileID: 100000, guid: a913811941469a64abeb138272cb6d79, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 1
+      icon: {fileID: 21300000, guid: 21ce17be761b0414e9bceb42c3b0a5fe, type: 3}
+      prefab: {fileID: 100000, guid: 5b63de927760304438a3c6ac347846d5, type: 3}
+      price: 1500
+      bordersShop: {fileID: 21300000, guid: 2b93213a16e0b9d4aaa9f0548db09425, type: 3}
+    - rarity: 2
+      icon: {fileID: 21300000, guid: fa8304f17da1ec641b1d6ae52948b4df, type: 3}
+      prefab: {fileID: 1192641458597302, guid: c350023b68bece943928351ad0df5c3a, type: 3}
+      price: 4000
+      bordersShop: {fileID: 21300000, guid: d9fa5162e74922543b8c3bab77b55be6, type: 3}
+    - rarity: 3
+      icon: {fileID: 21300000, guid: 308ef46ea86d7304f887fca42edb0715, type: 3}
+      prefab: {fileID: 9108431271194407498, guid: 7dbe1bddbd138dc43ac10cd6cadd9666, type: 3}
+      price: 15000
+      bordersShop: {fileID: 21300000, guid: f5836476d3076784fbc4fa053c5f4933, type: 3}
+  actualSellingPets: []
+  actualSellingPetsGameObject: []
+  actualSoldPets: []
+  shopItemSellPrefab: {fileID: 2051517790143180646, guid: 36e4040f8947ffd4886f99a993c3ed14, type: 3}
+  shopItemSellPrefabPARENT: {fileID: 0}
+  actualHoldingPets: []

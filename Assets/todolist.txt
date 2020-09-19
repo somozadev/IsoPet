@@ -1,0 +1,56 @@
+TODO LIST :
+=======
+||PET||
+=======
+- movimiento del pet✔️
+- partículas cuando pierde puntos y cuando gana ✔️
+- pet puede morir ✔️
+- input field dar nombre al pet ✔️
+- camera shake when dmg taken ✔️
+- RandomStart stats ( or maybe scriptableObjects for them?) ✔️
+- proceación de pets
+
+==========
+||CAMERA||
+==========
+- zoom in & zoom out (botones ui para ello o rueda de raton?) ✔️(raton)
+- movimiento al tocar bordes del encuadre ✔️
+- check if specific room is on camera, if so, when clickder pressed camera centers to original pos(room in center)
+- tab para cambiar de room
+- lock camera movement with spacebar & buttonClick✔️
+
+=============
+||GAME_LOOP||
+=============
+- tienda de mascotas
+        + BUY ✔️
+        + SELL
+        + RND
+        + MIX
+- ui economia + simbolo propio moneda ✔️
+- gestion de multiples mascotas ✔️
+- pantalla de inicio ✔️
+- pantalla de creditos
+- pantall de configuración 
+- sonidos
+
+
+
+=========
+||FIXES||
+=========
+. find more meshes for buying
+- edit prefabs y pos (in blender), box center point isnt okay
+- CHANGE MATERIAL AFTER HIT FOR DIFFERENT RARITY OBJECTS ✔️
+- <color="red">IMPORTANTE ACABAR BUY LOOP ===>> INSTANCIAR NUEVAS ISLAS CON LOS PETS</color> ✔️
+- when open shop move actual money to new pos. and resize it ✔️
+- when shop opened -> cancel camera zoom (when shop closed, allow to zoom) ✔️
+- when one lvl (water,food...) is to 0 -> stop updatin mesh color 
+- test more with this random value of lvls : out of index exceptions! ✔️
+- change locked camera movement -> not in ui as a button!! (if not working as one) maybe borders grayer??
+- vista a futuro -> cambiar sistema de pets a scriptableObjects (mas compatible pet&tienda)
+
+COLOR GREEN -> D1FFA3
+COLOR RED -> FFAFAF
+COLOR PURPLE -> E4ACFF
+COLOR PINK -> FFA3E7

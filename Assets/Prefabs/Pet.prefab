@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9203391058776587498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9203391058776587501}
+  - component: {fileID: 9203391058776587500}
+  - component: {fileID: 5663030650827036674}
+  - component: {fileID: -5327142303485225816}
+  m_Layer: 0
+  m_Name: Pet
+  m_TagString: Pet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9203391058776587501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203391058776587498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9203391058776587500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203391058776587498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ad24a39136b8442ade0de0f36eb248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualPetInfo:
+    name: 
+    hpLvl: 0
+    maxLvl: 0
+    waterLvl: 0
+    foodLvl: 0
+    energyLvl: 0
+    happynessLvl: 0
+    dayTimeMin: 0
+    waterTimeLoss: 0
+    foodTimeLoss: 0
+    gamesTimeLoss: 0
+    sleepTimeLoss: 0
+    petActions: 0
+    mesh: {fileID: 0}
+    spriteParents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    pointsLists:
+      waterPoints: []
+      foodPoints: []
+      gamesPoints: []
+      sleepPoints: []
+  petPoints:
+  - {fileID: 2882497873406298622, guid: 3ff7d24f21277ee438e6565492cc4cfa, type: 3}
+  - {fileID: 7113483887583155757, guid: 085f5d2f029a4b946ba9f441bbbd1756, type: 3}
+  - {fileID: 1385952253648234197, guid: aaf96887298b5f944a4ef95477ee7f7e, type: 3}
+  - {fileID: 6838567865045440886, guid: 5e2d78e013e2793418e11f91105361c2, type: 3}
+  dayTimePassed: 0
+  dayCount: 0
+--- !u!114 &5663030650827036674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203391058776587498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0066d5f2184b040418da9d47873d98ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-5327142303485225816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9203391058776587498}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
