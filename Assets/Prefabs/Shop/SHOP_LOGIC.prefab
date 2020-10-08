@@ -131,6 +131,9 @@ MonoBehaviour:
   actualSellingPets: []
   actualSellingPetsGameObject: []
   actualSoldPets: []
+  actualHoldingPets: []
+  persistantActualHoldingPets: []
+  nonPersistantActualHoldingPets: []
   shopItemSellPrefab: {fileID: 2051517790143180646, guid: 36e4040f8947ffd4886f99a993c3ed14, type: 3}
   shopItemSellPrefabPARENT: {fileID: 0}
-  actualHoldingPets: []
+  uNeedToHavePetsFirst: {fileID: 0}

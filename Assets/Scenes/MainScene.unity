@@ -1603,6 +1603,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 509615770}
+        m_TargetAssemblyTypeName: ShopLogic, Assembly-CSharp
+        m_MethodName: ResetSellGameObjectList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &893402840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3704,6 +3716,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 509615770}
+        m_TargetAssemblyTypeName: ShopLogic, Assembly-CSharp
+        m_MethodName: ResetSellGameObjectList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1912605690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,6 +3852,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1276570699}
         m_TargetAssemblyTypeName: ShopButtons, Assembly-CSharp
         m_MethodName: BuyButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 509615770}
+        m_TargetAssemblyTypeName: ShopLogic, Assembly-CSharp
+        m_MethodName: ResetSellGameObjectList
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4260,6 +4296,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 509615770}
+        m_TargetAssemblyTypeName: ShopLogic, Assembly-CSharp
+        m_MethodName: ResetSellGameObjectList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2094018569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4403,17 +4451,9 @@ PrefabInstance:
       value: ROOMS_LOGIC
       objectReference: {fileID: 0}
     - target: {fileID: 3288703324690720625, guid: 550c303b8fe47664ebf964bf83e67ea0, type: 3}
-      propertyPath: rooms.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288703324690720625, guid: 550c303b8fe47664ebf964bf83e67ea0, type: 3}
       propertyPath: shop
       value: 
       objectReference: {fileID: 509615770}
-    - target: {fileID: 3288703324690720625, guid: 550c303b8fe47664ebf964bf83e67ea0, type: 3}
-      propertyPath: rooms.Array.data[0]
-      value: 
-      objectReference: {fileID: 4458956595345725360, guid: a2dd91d93842d104188b14c914ae0f45, type: 3}
     - target: {fileID: 3288703324690720630, guid: 550c303b8fe47664ebf964bf83e67ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

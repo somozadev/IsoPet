@@ -43,10 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c88539e4f654b84088ef9d942998b36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomPrefab: {fileID: 4458956595345725362, guid: a2dd91d93842d104188b14c914ae0f45, type: 3}
+  rooms:
+  - {fileID: 4458956595345725360, guid: a2dd91d93842d104188b14c914ae0f45, type: 3}
+  roomsGameobjects: []
   mesh: {fileID: 0}
   rarity: 0
   shop: {fileID: 0}
   l: 0
-  count: 0
+  i: 0
   gridPositions: []

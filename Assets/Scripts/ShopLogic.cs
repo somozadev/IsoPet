@@ -31,14 +31,16 @@ public class ShopLogic : MonoBehaviour
 
     public ShopItemsSell iconsShop; 
     public List<ItemRarity> actualSellingPets;
-    public List<GameObject> actualSellingPetsGameObject;
-    public List<GameObject> actualSoldPets;
+    public List<GameObject> actualSellingPetsGameObject; //shop buying UI list
+
+
+
+    public List<GameObject> actualSoldPets; //List of roomGameObjects
     
 
-    [Header("Sell")]   
+    [Header("Sell")]
     public List<ItemRarity> actualHoldingPets;
-    public List<GameObject> persistantActualHoldingPets;
-    public List<GameObject> nonPersistantActualHoldingPets;
+    public List<GameObject> actualHoldingPetsGameObject;//shop sell UI list
     public GameObject shopItemSellPrefab;
     public GameObject shopItemSellPrefabPARENT;
     public GameObject uNeedToHavePetsFirst;
@@ -51,8 +53,7 @@ public class ShopLogic : MonoBehaviour
         actualSellingPets = new List<ItemRarity>();
         actualHoldingPets = new List<ItemRarity>();
         actualSellingPetsGameObject = new List<GameObject>();
-        nonPersistantActualHoldingPets = new List<GameObject>();
-        persistantActualHoldingPets = new List<GameObject>();
+        actualHoldingPetsGameObject = new List<GameObject>();
         StartShop();
         UpdateEconomy();
     }
@@ -93,11 +94,10 @@ public class ShopLogic : MonoBehaviour
         economyUiIcon.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
         economyUiIcon.GetComponent<RectTransform>().localPosition = new Vector3(435,410,0);
         shop.SetActive(false);
-        Camera.main.GetComponent<CameraZoomController>().isLocked = false;
+        Camera.main.GetComponent<CameraZoomController>().isLocked = false;        
     }
-    public void HideUIPiece(GameObject piece) => piece.SetActive(false);
-    public void ShowUIPiece(GameObject piece) => piece.SetActive(true);
-
+    public void HideUIPiece(GameObject piece) => piece.transform.localScale = Vector3.zero;
+    public void ShowUIPiece(GameObject piece) => piece.transform.localScale = Vector3.one;
     public void InstanciatePetName()
     {
         GameObject aux = Instantiate(nameSetPrefab, Vector3.zero,Quaternion.identity,parentCanvas.transform);
@@ -135,7 +135,6 @@ public class ShopLogic : MonoBehaviour
         else
             return true;
     }
-
     //BUG ENCONTRADO EN UNITY -> esperar a unity lo fixee o usar cuatro imagentes distintas y .overrideSprite
     public void ChooseBackgroundColour(int colour)
     {
@@ -156,23 +155,15 @@ public class ShopLogic : MonoBehaviour
             
         }
     }
-  
-    public void OpenSellShop() //PROBLEMAS CADA VEZ QUE ABRES SELL GAP DUPLICAN LISTAS 
+    public void ResetSellGameObjectList()
     {
-        // if(nonPersistantActualHoldingPets.Count!=actualSoldPets.Count)
-        // {
-            // foreach(GameObject item in nonPersistantActualHoldingPets)
-            // {
-            //     nonPersistantActualHoldingPets.Remove(item);
-            //     persistantActualHoldingPets.Remove(item);
-            //     Destroy(item);
-            // }
-        // }
-        nonPersistantActualHoldingPets = new List<GameObject>();
-        persistantActualHoldingPets = new List<GameObject>();
-
-        //hacer otra funcion para borrar todas las instancias (y sus posiciones de las listas) y llamarla al darle a los buttns de arriba o la X 
-
+        actualHoldingPetsGameObject = new List<GameObject>();
+    }
+    public void OpenSellShop() 
+    {              
+        Utility.ClearChildren(shopItemSellPrefabPARENT.transform);   
+         
+       
         if(actualHoldingPets.Count == 0)
         {
             uNeedToHavePetsFirst.SetActive(true);
@@ -184,15 +175,12 @@ public class ShopLogic : MonoBehaviour
         {
             GameObject aux = Instantiate(shopItemSellPrefab,Vector3.zero,Quaternion.identity,shopItemSellPrefabPARENT.transform);
             aux.GetComponent<Image>().sprite = item.bordersShop;
-            //Check if the pet is dead or not here! 
-            
             aux.GetComponentInChildren<TMP_Text>().text = (item.price * 0.75f).ToString();
             aux.GetComponentInChildren<ChildIconMarker>().GetComponent<Image>().sprite = item.icon;
-            nonPersistantActualHoldingPets.Add(aux);
-            persistantActualHoldingPets.Add(aux);
+            actualHoldingPetsGameObject.Add(aux);
         }   
     }
-    public void StartShop()
+    public void StartShop() //What sall i do if pet´s dead or sold?  
     {
         foreach(ItemRarity item in iconsShop)
         {

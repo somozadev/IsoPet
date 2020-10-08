@@ -152,6 +152,8 @@ MonoBehaviour:
       foodPoints: []
       gamesPoints: []
       sleepPoints: []
+    rarity: 0
+  rarity: 0
   boughtPetMesh: {fileID: 1769096876233828, guid: 7b120fd576470af4f89cad6c3ec0bcf2, type: 3}
   pet: {fileID: 0}
   petName: {fileID: 5510275032619462581, guid: c54f41ada170d7545bf8f81fc75c10d7, type: 3}
@@ -696,6 +698,7 @@ MonoBehaviour:
   height: 6
   cellPrefab: {fileID: 2107233179553218644, guid: 61eeec27c8eb2a341a604c2b29db65e3, type: 3}
   cells: []
+  passedRarity: 0
   rarityTextures:
   - {fileID: 2800000, guid: 2bd3237695efd7340b434e2a46352738, type: 3}
   - {fileID: 2800000, guid: f3ad26c663eda6c4bafd4e92be58e9ba, type: 3}

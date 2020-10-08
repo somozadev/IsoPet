@@ -37,7 +37,7 @@ public class RoomsLogic : MonoBehaviour
         roomsGameobjects.Add(room.gameObject);
         room.petToSet.name = editedName.text;
         editedName.gameObject.SetActive(false);    
-        // i++;
+
         
     }
     
